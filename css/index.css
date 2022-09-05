@@ -35,3 +35,13 @@ a {
 .header .hr {
     font-size: 13px;
 }
+
+/*레시피 추천*/
+.container-rem { margin-top: 50px; }
+.rem-title { width: 1080px; margin: auto; }
+.rem-frame { display: grid; grid-template-columns: 1fr 1fr; margin: auto; margin-top: 10px; width: 1080px; height: 300px;}
+.rem-item-wrap { width: 540px; height: 300px; }
+.rem-item { display: flex; width: 540px; height: 98px; border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
+.rem-number { font-size: 30px; }
+.rem-img { background-image: url(../img/index/rem-bg.png); background-size: 100% 100%; width: 100px; height: 100px; }
+.rem-plus { width: 1080px; margin-top: 10px; margin: auto; text-align: center; font-size: 20px; border-bottom: 1px solid #f4f4f4; }
