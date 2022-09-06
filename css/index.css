@@ -59,6 +59,8 @@ width: 50px;
 height: 40px;
 }
 
+.simple-img { background-image: url(../img/index/food.jpeg);}
+
 /*레시피 추천*/
 .container-rem { margin-top: 50px; }
 .rem-title { width: 1080px; margin: auto; }
