@@ -95,11 +95,13 @@ a {
 
 
 
+.hidden { display: none; }
+
 /*레시피 추천*/
 .container-rem { margin-top: 50px; }
 .rem-title { width: 1080px; margin: auto; }
-.rem-frame { display: grid; grid-template-columns: 1fr 1fr; margin: auto; margin-top: 10px; width: 1080px; height: 300px;}
-.rem-item-wrap { width: 540px; height: 300px; }
+.rem-frame { display: grid; grid-template-columns: 1fr 1fr; margin: auto; margin-top: 10px; width: 1080px; height: 100%;}
+.rem-item-wrap { width: 540px; height: 100px; }
 .rem-item { display: flex; width: 540px; height: 98px; border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
 .rem-number { display: table; font-size: 30px; width: 50px; }
 .rem-number > p { display: table-cell; vertical-align: middle; text-align: center; }
