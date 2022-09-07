@@ -85,6 +85,8 @@ a {
 .arrow-container {
     display: flex;
     justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .arrow-container button {
     border: none;
