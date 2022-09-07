@@ -96,20 +96,26 @@ a {
 .hidden { display: none; }
 
 /*레시피 랭킹*/
-.container-rank { margin-top: 50px; }
-.rank-title { width: 1080px; margin: auto; }
-.rank-frame { display: grid; grid-template-columns: 1fr 1fr; margin: auto; margin-top: 10px; width: 1080px; height: 100%;}
-.rank-item-wrap { width: 540px; height: 100px; }
-.rank-item { display: flex; width: 540px; height: 98px; border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
-.rank-number { display: table; font-size: 30px; width: 50px; }
-.rank-number > p { display: table-cell; vertical-align: middle; text-align: center; }
-.rank-img { background-image: url(../img/index/rank-bg.png); background-size: 100% 100%; width: 100px; height: 100px; }
-.rank-plus { width: 1080px; margin-top: 10px; margin: auto; text-align: center; font-size: 20px; border-bottom: 1px solid #f4f4f4; }
-.rank-text { margin: auto;}
-.rank-text > p { width: 300px; }
-.rank-text > p:first-child { margin-bottom: 5px; }
+#con2 .container-rank { margin-top: 50px; }
+#con2 .rank-title { width: 1080px; margin: auto; margin-top: 20px; }
+#con2 .rank-frame { display: grid; grid-template-columns: 1fr 1fr; margin: auto; margin-top: 10px; width: 1080px; height: 100%;}
+#con2 .rank-item-wrap { width: 540px; height: 100px; }
+#con2 .rank-item { display: flex; width: 540px; height: 98px; border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
+#con2 .rank-number { display: table; font-size: 30px; width: 50px; }
+#con2 .rank-number > p { display: table-cell; vertical-align: middle; text-align: center; }
+#con2 .rank-img { background-image: url(../img/index/rank-bg.png); background-size: 100% 100%; width: 100px; height: 100px; }
+#con2 .rank-plus { width: 1080px; margin-top: 10px; margin: auto; text-align: center; font-size: 20px; border-bottom: 1px solid #f4f4f4; }
+#con2 .rank-text { margin: auto;}
+#con2 .rank-text > p { width: 300px; }
+#con2 .rank-text > p:first-child { margin-bottom: 5px; }
 
 /*레시피 추천*/
-.container-rem { margin-top: 50px; }
-.rem-title { width: 1080px; margin: auto; }
-.rem-frame { display: grid; grid-template-columns: repeat(3,3fr); width: 1080px; height: 300px; }
+#con3 .container-rem { margin-top: 50px; }
+#con3 .rem-title { width: 1080px; margin: auto; margin-top: 20px; }
+#con3 .rem-frame { display: grid; grid-template-columns: repeat(4,4fr) ; grid-template-rows: repeat(2,275px); gap: 25px 20px; width: 1080px; margin: auto; margin-top: 5px;}
+#con3 .rem-item-frame { display: grid; grid-template-rows: 250px 25px; text-align: center;}
+#con3 img { width: 100%; height: 100%; }
+#con3 .rem-frame h4 { font-size: 17px; font-weight: 500; margin-top: 2px; }
+
+/*footer*/
+.footer { margin-top: 100px; height: 150px; border-top: 2px solid #f4f4f4;}
