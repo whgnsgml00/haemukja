@@ -68,29 +68,32 @@ a {
     height: 500px;
     box-sizing: border-box;
     border: 1px solid black;
-    text-align: center;
     overflow: hidden;
     position: relative;
 }
-
+ 
 .container .container-ad .img-box {
-    width: 3240px;
-    height:100%;
-    display:flex;
-    flex-wrap:nowrap;
-    animation: bannermove 20s linear infinite;
+    display: flex;
+    width: 1080px;
+    height: 500px;
 }
 
-@keyframes bannermove {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(-100%, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+.container .container-ad .img-box img {
+    min-width: 1080px;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: space-between;
+}
+.arrow-container button {
+    border: none;
+    background-color: white;
+}
+
+.foo-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .hidden { display: none; }
