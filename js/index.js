@@ -1,5 +1,5 @@
 const PlusList = document.querySelectorAll("#con2 .hidden");
-const PlusForm = document.querySelector("#con2 .rem-plus a");
+const PlusForm = document.querySelector("#con2 .rank-plus a");
 
 const HIDDEN_CLASSNAME = "hidden";
 

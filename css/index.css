@@ -91,22 +91,25 @@ a {
     100% {
         transform: translate(0, 0);
     }
-  }
-
-
+}
 
 .hidden { display: none; }
+
+/*레시피 랭킹*/
+.container-rank { margin-top: 50px; }
+.rank-title { width: 1080px; margin: auto; }
+.rank-frame { display: grid; grid-template-columns: 1fr 1fr; margin: auto; margin-top: 10px; width: 1080px; height: 100%;}
+.rank-item-wrap { width: 540px; height: 100px; }
+.rank-item { display: flex; width: 540px; height: 98px; border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
+.rank-number { display: table; font-size: 30px; width: 50px; }
+.rank-number > p { display: table-cell; vertical-align: middle; text-align: center; }
+.rank-img { background-image: url(../img/index/rank-bg.png); background-size: 100% 100%; width: 100px; height: 100px; }
+.rank-plus { width: 1080px; margin-top: 10px; margin: auto; text-align: center; font-size: 20px; border-bottom: 1px solid #f4f4f4; }
+.rank-text { margin: auto;}
+.rank-text > p { width: 300px; }
+.rank-text > p:first-child { margin-bottom: 5px; }
 
 /*레시피 추천*/
 .container-rem { margin-top: 50px; }
 .rem-title { width: 1080px; margin: auto; }
-.rem-frame { display: grid; grid-template-columns: 1fr 1fr; margin: auto; margin-top: 10px; width: 1080px; height: 100%;}
-.rem-item-wrap { width: 540px; height: 100px; }
-.rem-item { display: flex; width: 540px; height: 98px; border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
-.rem-number { display: table; font-size: 30px; width: 50px; }
-.rem-number > p { display: table-cell; vertical-align: middle; text-align: center; }
-.rem-img { background-image: url(../img/index/rem-bg.png); background-size: 100% 100%; width: 100px; height: 100px; }
-.rem-plus { width: 1080px; margin-top: 10px; margin: auto; text-align: center; font-size: 20px; border-bottom: 1px solid #f4f4f4; }
-.rem-text { margin: auto;}
-.rem-text > p { width: 300px; }
-.rem-text > p:first-child { margin-bottom: 5px; }
+.rem-frame { display: grid; grid-template-columns: repeat(3,3fr); width: 1080px; height: 300px; }
