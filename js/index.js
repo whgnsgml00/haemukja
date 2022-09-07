@@ -1,15 +1,25 @@
-const PlusList = document.querySelectorAll("#con2 .hidden");
-const PlusForm = document.querySelector("#con2 .rank-plus a");
+"use strict";
+//더보기
+const plusList = document.querySelectorAll("#con2 .hidden");
+const plusForm = document.querySelector("#con2 .rank-plus a");
 
-const HIDDEN_CLASSNAME = "hidden";
+const hIDDEN_CLASSNAME = "hidden";
 
 function PlusEvent(event)
 {
     event.preventDefault();
-    for (let i = 0; i < PlusList.length; i++) {
-        PlusList[i].classList.remove(HIDDEN_CLASSNAME);
+    for (let i = 0; i < plusList.length; i++) {
+        plusList[i].classList.remove(hIDDEN_CLASSNAME);
     }
-    PlusForm.classList.add(HIDDEN_CLASSNAME)
+    plusForm.classList.add(hIDDEN_CLASSNAME)
 }
 
-PlusForm.addEventListener("click", PlusEvent);
+plusForm.addEventListener("click", PlusEvent);
+
+//슬라이드
+const btnArrowNext = document.getElementById("next");
+const btnArrowPrev = document.getElementById("prev");
+
+btnArrowNext.addEventListener('click', () => {
+    
+})
