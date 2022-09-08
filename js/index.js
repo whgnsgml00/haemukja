@@ -1,7 +1,7 @@
 "use strict";
 //더보기
-const plusList = document.querySelectorAll("#con2 .hidden");
-const plusForm = document.querySelector("#con2 .rank-plus a");
+const plusList = document.querySelectorAll("#con3 .hidden");
+const plusForm = document.querySelector("#con3 .rank-plus a");
 
 const hIDDEN_CLASSNAME = "hidden";
 
