@@ -64,6 +64,7 @@ a {
     background-size: 100% 100%;
 }
 
+/*광고*/
 .container .container-ad {
     margin: 0 auto;
     width: 1080px;
@@ -87,8 +88,6 @@ a {
 .arrow-container {
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 .arrow-container button {
     border: none;
