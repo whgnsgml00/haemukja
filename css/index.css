@@ -10,7 +10,8 @@ ul, ol {
 }
 
 a {
-    text-decoration: none
+    color: inherit;
+    text-decoration: none;
 }
 
 /*header*/
@@ -35,11 +36,21 @@ a {
     font-size: 18px;
 }
 
+
 .header .hr {
     font-size: 13px;
 }
 
+#search-icon {
+    margin-right: 30px;
+}
+
 /*container*/
+.cat-top {
+    width: 1080px;
+    margin: auto;
+}
+
 .container .container-cat {
     width: 1080px;
     height: 100px;
@@ -67,18 +78,18 @@ a {
 /*광고*/
 .container .container-ad {
     margin: 0 auto;
-    width: 1080px;
+    min-width: 1080px;
     height: 500px;
     box-sizing: border-box;
     border: 1px solid black;
     overflow: hidden;
-    position: relative;
 }
  
 .container .container-ad .img-box {
     display: flex;
     width: 1080px;
     height: 500px;
+    transition-duration: 1s;
 }
 
 .container .container-ad .img-box img {
@@ -88,6 +99,7 @@ a {
 .arrow-container {
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
 .arrow-container button {
     border: none;
@@ -96,7 +108,6 @@ a {
 
 .foo-container {
     display: flex;
-    justify-content: space-between;
 }
 
 .hidden { display: none; }

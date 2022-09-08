@@ -1,5 +1,5 @@
 "use strict";
-//더보기
+//더보기 기능
 const plusList = document.querySelectorAll("#con3 .hidden");
 const plusForm = document.querySelector("#con3 .rank-plus a");
 
@@ -16,10 +16,49 @@ function PlusEvent(event)
 
 plusForm.addEventListener("click", PlusEvent);
 
-//슬라이드
+//슬라이드 기능
+const imgBox = document.querySelector(".img-box");
 const btnArrowNext = document.getElementById("next");
 const btnArrowPrev = document.getElementById("prev");
 
-btnArrowNext.addEventListener('click', () => {
+let currentPosition= 0;
+let position = 0;
+const IMAGE_WIDTH = 1080;
+
+function prev() {
+    if  (currentPosition > 0) {
+        btnArrowNext.removeAttribute("disabled");
+        position += IMAGE_WIDTH;
+        imgBox.style.transform = `translateX(${position}px)`;
+        currentPosition -= 1;
+    }
+    if  (currentPosition == 0) {
+        btnArrowPrev.setAttribute("disabled", 'true');
+    }
+}
+function next() {
+    if  (currentPosition < 2) {
+        btnArrowPrev.removeAttribute("disabled");
+        position -= IMAGE_WIDTH;
+        imgBox.style.transform = `translateX(${position}px)`;
+        currentPosition += 1;
+    }
+    if  (currentPosition  == 2) {
+        btnArrowNext.setAttribute("disabled", 'true');
+    }
+}
+
+function init() {
+    btnArrowPrev.setAttribute("disabled", 'true');
+    btnArrowPrev.addEventListener("click", prev);
+    btnArrowNext.addEventListener("click", next);
+}
+
+init();
+
+//검색 기능
+const btnSearch = document.getElementById('search-icon');
+
+function search() {
     
-})
+}
