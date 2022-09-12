@@ -129,12 +129,12 @@ a {
 /*레시피 추천*/
 /* #con3 .container-rem { margin-top: 50px; } */
 #con4 .rem-title { width: 1080px; margin: auto; margin-top: 20px; }
-#con4 .rem-frame { display: grid; grid-template-columns: repeat(4,4fr) ; grid-template-rows: repeat(2,275px); gap: 25px 20px; width: 1080px; margin: 5px auto 100px auto; }
+#con4 .rem-frame { display: grid; grid-template-columns: repeat(4,4fr) ; grid-template-rows: repeat(2,275px); gap: 25px 20px; width: 1080px; margin: 5px auto 50px auto; }
 #con4 .rem-item-frame { display: grid; grid-template-rows: 250px 25px; text-align: center;}
 #con4 img { width: 100%; height: 100%; }
 #con4 .rem-frame h4 { font-size: 17px; font-weight: 500; margin-top: 2px; }
 
 /*footer*/
-.footer { display: flex; height: 150px; align-items: flex-end; border-top: 2px solid #f4f4f4; justify-content: center;}
-.footer-list { width: 1300px; height: 21px; margin-bottom: 30px; }
+.footer { border-top: 2px solid #f4f4f4; }
+.footer-list { width: 1080px; height: 21px; margin: 50px auto 30px auto; }
 .footer li { text-align: center; width: 125px; float: left; margin-right: 20px; border-right: 2px solid #f4f4f4; border-left: 2px solid #f4f4f4; }
