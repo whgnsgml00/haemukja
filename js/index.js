@@ -53,12 +53,7 @@ function init() {
     btnArrowPrev.addEventListener("click", prev);
     btnArrowNext.addEventListener("click", next);
 }
-
 init();
 
 //검색 기능
 const btnSearch = document.getElementById('search-icon');
-
-function search() {
-    
-}
