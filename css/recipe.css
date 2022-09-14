@@ -88,11 +88,18 @@ a {
 }
 
 /*recipe-container*/
-.recipe-title { width: 1080px; margin: auto;}
-.recipe-list-container { display: flex; margin: auto; width: 1080px; flex-wrap: wrap;}
-.recipe-list { width: 270px; height: 410px; }
-.recipe-list-img { width: 260px; height: 300px; background-image: url(../img/recipe/recipe-sample2.jpg); background-size: 100% 100%; background-repeat: no-repeat; }
+.recipe-title { width: 1080px; margin: 0px auto 3px auto;}
+.recipe-list-container { display: grid; grid-template-columns: repeat(4,4fr); gap: 10px; margin: auto; width: 1080px; }
+.recipe-list { width: 100%; height: 415px; }
+.recipe-list-img { width: 100%; height: 300px; background-image: url(../img/recipe/recipe-sample2.jpg); background-size: 100% 100%; background-repeat: no-repeat; }
 .recipe-list-star { height: 20px; }
 .recipe-list-name { height: 25px; }
-.recipe-list-material { height: 55px; }
-.recipe-list-matrial-ellipsis { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.recipe-list-material h4 { margin-bottom: 2px; }
+.recipe-list-matrial-ellipsis { 
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+ }
