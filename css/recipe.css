@@ -89,7 +89,7 @@ a {
 
 /*recipe-container*/
 .recipe-title { width: 1080px; margin: 0px auto 3px auto;}
-.recipe-list-container { display: grid; grid-template-columns: repeat(4,4fr); gap: 10px; margin: auto; width: 1080px; }
+.recipe-list-container { display: grid; grid-template-columns: repeat(4,4fr); gap: 0 10px; margin: auto; width: 1080px; }
 .recipe-list { width: 100%; height: 415px; }
 .recipe-list-img { width: 100%; height: 300px; background-image: url(../img/recipe/recipe-sample2.jpg); background-size: 100% 100%; background-repeat: no-repeat; }
 .recipe-list-star { height: 20px; }
