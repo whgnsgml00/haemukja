@@ -5,13 +5,12 @@ const plusForm = document.querySelector("#con3 .rank-plus a");
 
 const hIDDEN_CLASSNAME = "hidden";
 
-function PlusEvent(event)
-{
+function PlusEvent(event) {
     event.preventDefault();
     for (let i = 0; i < plusList.length; i++) {
         plusList[i].classList.remove(hIDDEN_CLASSNAME);
     }
-    plusForm.classList.add(hIDDEN_CLASSNAME)
+    plusForm.classList.add(hIDDEN_CLASSNAME);
 }
 
 plusForm.addEventListener("click", PlusEvent);
@@ -57,3 +56,8 @@ init();
 
 //검색 기능
 const btnSearch = document.getElementById('search-icon');
+const searchBar = document.querySelector('.search-bar');
+
+btnSearch.addEventListener("click", () => {
+
+});
