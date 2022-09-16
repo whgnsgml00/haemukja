@@ -16,48 +16,84 @@ function PlusEvent(event) {
 plusForm.addEventListener("click", PlusEvent);
 
 //슬라이드 기능
-const imgBox = document.querySelector(".img-box");
-const btnArrowNext = document.getElementById("next");
-const btnArrowPrev = document.getElementById("prev");
+function adslide() {
+    const imgBox = document.querySelector(".img-box");
+    const btnArrowNext = document.getElementById("ad-next");
+    const btnArrowPrev = document.getElementById("ad-prev");
 
-let currentPosition= 0;
-let position = 0;
-const IMAGE_WIDTH = 1080;
+    let currentPosition= 0;
+    let position = 0;
+    const IMAGE_WIDTH = 1080;
 
-function prev() {
-    if  (currentPosition > 0) {
-        btnArrowNext.removeAttribute("disabled");
-        position += IMAGE_WIDTH;
-        imgBox.style.transform = `translateX(${position}px)`;
-        currentPosition -= 1;
+    function prev() {
+        if  (currentPosition > 0) {
+            btnArrowNext.removeAttribute("disabled");
+            position += IMAGE_WIDTH;
+            imgBox.style.transform = `translateX(${position}px)`;
+            currentPosition -= 1;
+        }
+        if  (currentPosition == 0) {
+            btnArrowPrev.setAttribute("disabled", 'true');
+        }
     }
-    if  (currentPosition == 0) {
+    function next() {
+        if  (currentPosition < 2) {
+            btnArrowPrev.removeAttribute("disabled");
+            position -= IMAGE_WIDTH;
+            imgBox.style.transform = `translateX(${position}px)`;
+            currentPosition += 1;
+        }
+        if  (currentPosition  == 2) {
+            btnArrowNext.setAttribute("disabled", 'true');
+        }
+    }
+
+    function init() {
         btnArrowPrev.setAttribute("disabled", 'true');
+        btnArrowPrev.addEventListener("click", prev);
+        btnArrowNext.addEventListener("click", next);
     }
+    init();
 }
-function next() {
-    if  (currentPosition < 2) {
-        btnArrowPrev.removeAttribute("disabled");
-        position -= IMAGE_WIDTH;
-        imgBox.style.transform = `translateX(${position}px)`;
-        currentPosition += 1;
+adslide();
+
+function catslide() {
+    const catBox = document.querySelector(".cat-item");
+    const btnArrowNext = document.getElementById("cat-next");
+    const btnArrowPrev = document.getElementById("cat-prev");
+
+    let currentPosition = 0;
+    let position = 0;
+    const catWidth = 1026;
+
+    function prev() {
+        if (currentPosition > 0) {
+            btnArrowNext.removeAttribute("disabled");
+            position += catWidth;
+            catBox.style.transform = `translate(${position}px)`;
+            currentPosition -= 1;
+        }
+        if  (currentPosition == 0) {
+            btnArrowPrev.setAttribute("disabled", 'true');
+        }
     }
-    if  (currentPosition  == 2) {
-        btnArrowNext.setAttribute("disabled", 'true');
+    function next() {
+        if  (currentPosition < 1) {
+            btnArrowPrev.removeAttribute("disabled");
+            position -= catWidth;
+            catBox.style.transform = `translateX(${position}px)`;
+            currentPosition += 1;
+        }
+        if  (currentPosition  == 2) {
+            btnArrowNext.setAttribute("disabled", 'true');
+        }
     }
+
+    function init() {
+        btnArrowPrev.setAttribute("disabled", 'true');
+        btnArrowPrev.addEventListener("click", prev);
+        btnArrowNext.addEventListener("click", next);
+    }
+    init();
 }
-
-function init() {
-    btnArrowPrev.setAttribute("disabled", 'true');
-    btnArrowPrev.addEventListener("click", prev);
-    btnArrowNext.addEventListener("click", next);
-}
-init();
-
-//검색 기능
-const btnSearch = document.getElementById('search-icon');
-const searchBar = document.querySelector('.search-bar');
-
-btnSearch.addEventListener("click", () => {
-
-});
+catslide();

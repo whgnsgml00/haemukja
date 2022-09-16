@@ -50,17 +50,30 @@ a {
     font-size: 13px;
 }
 
-#search-icon {
-    margin-right: 30px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
+.search-bar {
+    margin-right: 15px;
+    height: 25px;
 }
 
 /*container*/
 .cat-top {
     width: 1080px;
+    margin: 0 auto;
+}
+
+.foo1-container {
+    display: flex;
+}
+
+.cat-arrow-container {
+    display: flex;
+    justify-content: space-between;
     margin: auto;
+}
+
+.cat-arrow-container button {
+    border: none;
+    background-color: white;
 }
 
 .container .container-cat {
@@ -69,22 +82,31 @@ a {
     margin: 0 auto;
     box-sizing: border-box;
     border: 1px solid black;
+    float: left;
+    display: flex;
+    overflow: hidden;
+    transition-duration: 1s;
     text-align: center;
     margin-bottom: 25px;
 }
+
 .container .container-cat .categori {
     float: left;
     margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 54px;
 }
 
 .container .container-cat .categori .simple-img {
-    margin-bottom: 10px;
-    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 60px;
     height: 40px;
     background-image: url(../img/index/food.jpeg);
     background-size: 100% 100%;
+}
+
+.cat-item {
+    display: flex;
 }
 
 /*광고*/
